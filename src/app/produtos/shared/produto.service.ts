@@ -19,7 +19,7 @@ export class ProdutoService {
 
   getById(id: number) {
     const url = `${this.URL}/${id}`;
-    return this.http.get<Produto[]>(url);
+    return this.http.get<Produto>(url);
 
   }
 
